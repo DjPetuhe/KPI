@@ -22,10 +22,16 @@ int main()
     x = input("Input the lenght of the first side:"); //Ввод данных с проверкой через функцию
     y = input("Input the lenght of the second side:");
     z = input("Input the lenght of the third side:");
-    if (x + y > z && x + z > y && y + z > x) //Проверка существует ли треугольник с такими сторонами
+    if (x < y + z) //Проверка существует ли треугольник с такими сторонами
     {
-        cout << "Exist";
-        return 0;
+        if (z < x + y)
+        {
+            if (y < x + z)
+            {
+                cout << "Exist";
+                return 0;
+            }
+        }
     }
     cout << "Does not exist";
     return 0;
