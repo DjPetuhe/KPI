@@ -21,7 +21,7 @@ int main()
         }
         if (z == 1)
         {
-            cout << mers << endl;
+            cout << "mers = " << mers << endl;
         }
         j = 0;
         while (j == 0)
